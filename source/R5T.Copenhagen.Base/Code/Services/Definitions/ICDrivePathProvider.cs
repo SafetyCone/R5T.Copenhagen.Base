@@ -1,9 +1,12 @@
 ﻿using System;
 
+using R5T.T0064;
+
 
 namespace R5T.Copenhagen
 {
-    public interface ICDrivePathProvider
+    [ServiceDefinitionMarker]
+    public interface ICDrivePathProvider : IServiceDefinition
     {
         string GetCDrivePath();
     }
